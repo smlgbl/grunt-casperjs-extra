@@ -1,0 +1,18 @@
+{
+  "name": "grunt-install-casperjs",
+  "version": "0.0.0",
+  "description": "Use grunt to install and run casperjs",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Samuel Gabel (smlgbl@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-env": "~0.4.0",
+    "grunt-casperjs": "~1.0.6",
+    "casperjs": "git://github.com/smlgbl/casperjs.git#feature/makeUsableByNPM"
+  }
+}
