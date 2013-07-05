@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": "https://github.com/smlgbl/grunt-casperjs-extra.git",
   "author": "Samuel Gabel (smlgbl@gmail.com)",
   "license": "MIT",
   "devDependencies": {
