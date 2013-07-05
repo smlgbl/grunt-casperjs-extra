@@ -1,18 +1,39 @@
 {
   "name": "grunt-casperjs-extra",
-  "version": "0.0.0",
-  "description": "Use grunt to install and run casperjs",
+  "version": "0.1.0",
+  "description": "Use grunt to install and run casperjs tests",
   "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/smlgbl/grunt-casperjs-extra.git",
-  "author": "Samuel Gabel (smlgbl@gmail.com)",
-  "license": "MIT",
+  "homepage": "https://github.com/smlgbl/grunt-casperjs-extra",
+  "author": {
+    "name": "Samuel Gabel",
+    "email": "smlgbl@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/smlgbl/grunt-casperjs-extra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smlgbl/grunt-casperjs-extra/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/smlgbl/grunt-casperjs-extra/blob/master/LICENSE-MIT"
+    }
+  ],
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-env": "~0.4.0",
     "grunt-casperjs": "~1.0.6",
     "casperjs": "git://github.com/smlgbl/casperjs.git#feature/makeUsableByNPM"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
   }
 }
