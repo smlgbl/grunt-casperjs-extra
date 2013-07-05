@@ -13,3 +13,14 @@ Please also keep an eye on the original [issue](https://github.com/n1k0/casperjs
 but how?
 ========
 This is done by using a fork of casperjs with a modified package.json (see here: ), so that the phantomjs dependency can be resolved, without the need to manually install it. The grunt-env plugin is used to set the PATH where casperjs was downloaded (via GIT) and to tell casperjs where to find phantomjs.
+
+what to do?
+===========
+
+```shell
+   sudo npm install -g grunt
+   git clone git@github.com:smlgbl/grunt-casperjs-extra.git
+   cd grunt-casperjs-extra/
+   npm install
+   grunt
+```
