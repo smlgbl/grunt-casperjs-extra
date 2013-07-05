@@ -8,6 +8,7 @@ casper.test.begin( 'Test casperJS on ' + getBaseUrl(), function suite(test){
     test.assertHttpStatus(200, "Successfully loaded page");
     test.assertTextExists( "Google", "We've reached Google" );
     test.assertUrlMatch(/^http:\/\/www.google/, "Google is http");
+    casper.takeScreenshot('google');
   });
   casper.run( function() {
     test.done();
