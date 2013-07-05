@@ -4,7 +4,6 @@ module.exports = function(grunt) {
     env: {
       casper: {
         BASEURL: "http://www.google.com",
-        PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:./node_modules/.bin",
         PHANTOMJS_EXECUTABLE: "node_modules/casperjs/node_modules/.bin/phantomjs"
       }
     },
@@ -20,6 +19,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks( 'grunt-casperjs' );
   grunt.loadNpmTasks( 'grunt-env' );
 
+  grunt.registerTask('extendPATH', 'Add the npm bin dir to PATH', function() {
+	var pathDelimiter = ':';
+	var extPath = 'node_modules/.bin';
+	var pathArray = process.env.PATH.split( pathDelimiter );
+	pathArray.unshift( extPath );
+	process.env.PATH = pathArray.join( pathDelimiter );
+	grunt.log.writeln('Extending PATH to be ' + process.env.PATH);
+  });
+
   // grunt for Frontend testing
-  grunt.registerTask('default', [ 'env:casper', 'casperjs']);
+  grunt.registerTask('default', [ 'env:casper', 'extendPATH', 'casperjs']);
 };
