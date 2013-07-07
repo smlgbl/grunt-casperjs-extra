@@ -3,6 +3,11 @@ grunt-casperjs-extra
 
 Take care of installation of [casperjs](http://casper.org) and [phantomjs](http://phantomjs.org) and run casperjs tests using [grunt](http://www.gruntjs.com)
 
+warning!
+========
+
+This will install the current master branch of CasperJS, which includes the new testing layout. See the test example in tests/.
+
 why, oh why?
 ============
 
