@@ -29,7 +29,7 @@
   ],
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-env": "~0.4.0",
+    "grunt-env": "git://github.com/smlgbl/grunt-env.git",
     "grunt-casperjs": "~1.0.6",
     "casperjs": "git://github.com/smlgbl/casperjs.git#feature/makeUsableByNPM"
   },
