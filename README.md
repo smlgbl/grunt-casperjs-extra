@@ -1,7 +1,8 @@
 grunt-casperjs-extra
 ====================
 
->- ![Build Status](https://travis-ci.org/smlgbl/grunt-casperjs-extra.png?branch=master)
+![Build Status](https://travis-ci.org/smlgbl/grunt-casperjs-extra.png?branch=master)
+
 Take care of installation of [casperjs](http://casper.org) and [phantomjs](http://phantomjs.org) and run casperjs tests using [grunt](http://www.gruntjs.com)
 
 warning!
